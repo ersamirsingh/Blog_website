@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creator Platform</title>
+    <link rel="stylesheet" href="BlogWeb.css">
+
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="container-left">
+            <img src="./Logo.png" alt="logo" class="logo" />
+            <div class="item home"><a href="./index.html">Home</a></div>
+            <div class="item" id="studio"><a href="./Studio.html">Studio</a></div>
+            <div class="item" id="calender"><a href="./Calendar.html">Goals</a></div>
+            <div class="item" id="about">About</div>
+            <div class="item" id="blog">Blogs</div>
+        </div>
+        <div class="container-right">
+            <button type="submit" class="nav-btn" id="login-btn">Login</button>
+            <button class="nav-btn" id="signup-btn">signup</button>
+        </div>
+    </nav>
+
+    <div style="height:60px; width: 100%;"></div>
+
+    <header>
+        <h1>Blog Creator Platform</h1>
+    </header>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="formatText('insertUnorderedList')">Bullet List</button>
+            <button onclick="formatText('insertOrderedList')">Numbered List</button>
+            <button onclick="addHeading('h1')">H1</button>
+            <button onclick="addHeading('h2')">H2</button>
+        </div>
+        <div class="editor" contenteditable="true"></div>
+    </div>
+
+    <script src="./BlogWeb.js"></script>
+</body>
+</html>

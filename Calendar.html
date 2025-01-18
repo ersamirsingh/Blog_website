@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./BlogWeb.css">
+</head>
+<body>
+    <nav class="nav-bar-goal">
+        <div class="container-left">
+            <img src="./Logo.png" alt="logo" class="logo" />
+            <div class="item home"><a href="./index.html">Home</a></div>
+            <div class="item" id="studio"><a href="./Studio.html">Studio</a></div>
+            <div class="item" id="calender"><a href="./Calendar.html">Goals</a></div>
+            <div class="item" id="about">About</div>
+            <div class="item" id="blog">Blogs</div>
+        </div>
+        <div class="container-right">
+            <button type="submit" class="nav-btn" id="login-btn">Login</button>
+            <button class="nav-btn" id="signup-btn">signup</button>
+        </div>
+    </nav>
+
+    <div style="height:60px; width: 100%;"></div>
+
+
+    <div class="editor" contenteditable="true"></div>
+    <div class="calendar">
+        <label for="goal-date">Set a Goal Date:</label>
+        <input type="date" id="goal-date">
+        <button onclick="addGoal()">Add Goal</button>
+        <ul class="goal-list" id="goal-list"></ul>
+    </div>
+
+<script src="./BlogWeb.js"></script>
+</body>
+</html>
